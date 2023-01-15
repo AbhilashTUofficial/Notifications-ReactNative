@@ -1,6 +1,6 @@
 const admin = require('firebase-admin');
 
-export const sendPushNotification = (token, title, body) => {
+const sendPushNotification = (token, title, body) => {
     // Initialize the Firebase app
     admin.initializeApp({
         credential: admin.credential.cert(require('./pushnotify-cbd7c-firebase-adminsdk-5kztc-69bee60c14.json')),
